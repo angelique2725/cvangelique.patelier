@@ -1,0 +1,238 @@
+        #Calque_2 {
+  
+  width: 150px;
+  
+}
+
+
+
+
+/*supprimerligne*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lg {
+  display: flex; 
+margin: 2em
+
+}
+ h1 {
+
+    font-size: calc(2.5vw + 4px);
+    display: flex; justify-content: center;
+  }
+h2 {
+
+  font-size: calc(2.5vw + 3px);
+  display: flex; justify-content: center;
+}
+
+p {
+  font-size: 1.2vw;
+}
+
+
+/*corps du site*/
+body {
+  display: grid;
+  gap: 2em;
+  background-color: rgb(193, 73, 88);
+  border-color: rgb(255, 255, 255);
+}
+
+header {
+  padding: 5em;
+
+  background-image:  url(https://i.ibb.co/K7nP4dk/TRAME.jpg);
+  justify-content: center center;
+}
+
+main {
+  display: grid;
+  place-items: center;
+ 
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+
+
+}
+
+
+.title h1 {
+  display: flex; justify-content: center;
+  margin: 0;
+  font-size: 2.5em;
+  color: white;
+}
+
+
+main p{
+  display: flex;
+  flex-direction: row-reverse;
+  
+  
+}
+
+/* cv*/
+
+p {
+  margin: 10px 0;
+}
+.title { margin: 0.5px;
+  padding: 0.5px;
+  font-size: large;
+  background-color: rgb(193, 78, 88);
+  border-radius: 30px;}
+section {
+  margin: 20px;
+  padding: 10px ;
+  background-color: rgb(193, 78, 88);
+  border-radius: 10px;
+
+}
+section:hover h2{
+  color: white;
+  border-bottom: 2px solid white;
+}
+section h2{
+  color: white;
+}
+section p {
+  color: white;
+}
+
+ul img { 
+  width: 200px;
+}
+section ul li { color: white;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+
+ 
+}
+.competence{
+  justify-content: flex-end;
+  
+  
+}
+
+li {
+  margin: 10px ;
+ font-size: 1.5em;
+}
+#organ{
+  display: grid;
+  
+}
+.des p {
+  font-size: 1.5em;
+}
+.imga img {
+  width: 20%;
+  
+  
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  margin: 5em;
+   background-color:rgb( 242, 198, 194) ;
+  border-radius: 0.1px solid rgb(255, 255, 255);
+
+   border-radius: 4px;
+  padding: 9px 12px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.btn  a{
+    color: rgb(255, 255, 255);
+ 
+ border: none;    
+ color: rgb(255, 255, 255);
+
+   font-size: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+}
+
+.btn a:hover {
+  transform: scale(1.05);
+}
+.lg,  .cv_1{
+ 
+  display:grid ;
+
+  justify-items: center;
+}
+
+
+#contact h2 {
+  display: flex;
+  justify-content: center;
+
+}
+.carte{   display: flex; justify-content: center;
+  margin: 2em}
+
+
+/*bas de page*/
+footer  {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(242, 198,194);
+  color: white;
+  height: 10vh;
+
+}
+
+footer a {
+  color: white;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@media(min-width: 760px){
+  body{
+    gap:2em;
+  }
+   header {
+        padding: 2em; /* Increase padding for larger screens */
+    }
+
+    #organ {
+        grid-template-columns: 2fr 1fr; /* Original layout for larger screens */
+        margin: 2em;
+    }
+
+    .lg, .cv_1 {
+        grid-template-columns: 2fr 1fr; /* Original layout for larger screens */
+        margin-bottom: 0; /* No bottom margin when side-by-side */
+    }
+
+    .btn {
+        flex-direction: row; /* Buttons side-by-side on larger screens */
+    }
+
+    /* Adjust font sizes for larger screens if needed */
+    h1 {
+        font-size: calc(3.5vw + 4px); /* Example: Larger on desktop */
+    }
+    h2 {
+        font-size: calc(2.5vw + 3px);
+    }
+
+}
